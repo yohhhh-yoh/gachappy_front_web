@@ -1,0 +1,87 @@
+.ranking-header {
+    margin-bottom: 20px;
+}
+
+.page-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.ranking-filters {
+    display: flex;
+    gap: 10px;
+}
+
+.filter-btn {
+    padding: 10px 24px;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s;
+    color: #666;
+}
+
+.filter-btn:hover {
+    border-color: #ff3333;
+    color: #ff3333;
+}
+
+.filter-btn.active {
+    background: #ff3333;
+    color: white;
+    border-color: #ff3333;
+}
+
+.rank-badge {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.rank-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    /* 順位とカードの間隔 */
+}
+
+.rank-number {
+    width: 40px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #444444;
+}
+
+.rank-item .card {
+    flex: 1;
+}
+
+.top-rank.rank-1 {
+    padding: 8px;
+    background: rgba(255, 215, 0, 0.15);
+    border-radius: 16px;
+}
+
+.top-rank.rank-2 {
+    padding: 8px;
+    background: rgba(192, 192, 192, 0.15);
+    border-radius: 16px;
+}
+
+.top-rank.rank-3 {
+    padding: 8px;
+    background: rgba(205, 127, 50, 0.15);
+    border-radius: 16px;
+}

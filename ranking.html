@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>人気ランキング | Gachappy</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/ranking.css">
+  <link rel="stylesheet" href="css/components/section.css">
+  <link rel="stylesheet" href="css/components/card.css">
+</head>
+
+<body>
+  <div id="header"></div>
+
+  <div class="main-container">
+    <div class="content">
+      <div class="ranking-header">
+        <h1 class="page-title">人気ランキング</h1>
+        <div class="ranking-filters">
+          <button class="filter-btn active">総合</button>
+          <button class="filter-btn">本日</button>
+          <button class="filter-btn">今週</button>
+          <button class="filter-btn">今月</button>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header">
+          <div class="section-title">TOP 10</div>
+        </div>
+        <div class="ranking-list" id="rankingList"></div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  </div>
+
+  <script src="js/header.js"></script>
+  <script type="module" src="js/pages/ranking.js"></script>
+</body>
+</body>
+
+</html>
