@@ -5,9 +5,9 @@
 
 .content {
     flex: 1;
-    padding: 30px 40px;
+    padding: 40px 50px;
     width: 100%;
-    padding-top: 100px;
+    padding-top: 90px;
 }
 
 .section {
@@ -18,5 +18,5 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
