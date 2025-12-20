@@ -1,21 +1,5 @@
 import { favoriteItems } from '../data/mock.js';
 
-//お気に入りボタン
-document.addEventListener('click', function (e) {
-  const heart = e.target.closest('.heart-icon');
-  if (!heart) return;
-
-  e.stopPropagation();
-
-  if (heart.textContent === '♡') {
-    heart.textContent = '♥';
-    heart.style.color = '#ff3333';
-  } else {
-    heart.textContent = '♡';
-    heart.style.color = '#333';
-  }
-});
-
 // 表示方法切り替え
 const cardContainer = document.getElementById('cardContainer');
 const gridBtn = document.querySelector('.view-btn.grid');

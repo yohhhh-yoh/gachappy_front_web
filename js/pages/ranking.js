@@ -1,19 +1,6 @@
 // mockデータのインポート
 import {rankingData} from '../data/mock.js';
 
-// お気に入りボタン
-document.querySelectorAll('.heart-icon').forEach(heart => {
-    heart.addEventListener('click', function(e) {
-        e.stopPropagation();
-        if (this.textContent === '♡') {
-            this.textContent = '♥';
-            this.style.color = '#ff3333';
-        } else {
-            this.textContent = '♡';
-            this.style.color = '#333';
-        }
-    });
-});
 
 // 表示ランキングの切り替え
 document.querySelectorAll('.filter-btn').forEach(btn => {

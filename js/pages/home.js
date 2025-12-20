@@ -1,22 +1,6 @@
 // mockデータのインポート
 import { todayCards, weeklyData } from '../data/mock.js';
 
-//お気に入りボタン
-document.addEventListener('click', function (e) {
-  const heart = e.target.closest('.heart-icon');
-  if (!heart) return;
-
-  e.stopPropagation();
-
-  if (heart.textContent === '♡') {
-    heart.textContent = '♥';
-    heart.style.color = '#ff3333';
-  } else {
-    heart.textContent = '♡';
-    heart.style.color = '#333';
-  }
-});
-
 // 本日発売商品の表示
 const container = document.getElementById('today-release');
 
