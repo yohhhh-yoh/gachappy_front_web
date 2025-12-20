@@ -82,3 +82,27 @@ export const rankingData = [
     bg: "linear-gradient(135deg, #dcdcff 0%, #6a5acd 100%)"
   }
 ];
+
+export const favoriteItems = [
+  {
+    id: "D",
+    title: "ねこだらけマスコットコレクション",
+    maker: "Kitty Lab",
+    price: "¥400",
+    bg: "linear-gradient(135deg, #ffe4e1 0%, #ff9aa2 100%)"
+  },
+  {
+    id: "E",
+    title: "レトロ純喫茶ミニチュア",
+    maker: "Retro Works",
+    price: "¥500",
+    bg: "linear-gradient(135deg, #f5deb3 0%, #d2b48c 100%)"
+  },
+  {
+    id: "F",
+    title: "宇宙探検フィギュアシリーズ",
+    maker: "Space Toy",
+    price: "¥600",
+    bg: "linear-gradient(135deg, #dcdcff 0%, #6a5acd 100%)"
+  }
+];

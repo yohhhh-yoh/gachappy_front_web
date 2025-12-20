@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お気に入りブックマーク | Gachappy</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/components/section.css">
+  <link rel="stylesheet" href="css/components/card.css">
+  <link rel="stylesheet" href="css/favorite.css">
+
+</head>
+
+<body>
+  <div id="header"></div>
+
+  <div class="main-container">
+    <div class="content">
+      <div class="section">
+        <div class="section-header">
+          <div class="page-title">お気に入り商品</div>
+        </div>
+        <div class="favorite-toolbar">
+          <div class="result-count" id="resultCount"></div>
+
+          <div class="toolbar-actions">
+            <div class="sort-wrapper">
+              <button class="toolbar-btn" id="sortBtn">
+                並べ替え：<span id="sortLabel">標準</span>
+                <span class="arrow"></span>
+              </button>
+
+              <ul class="sort-menu" id="sortMenu">
+                <li data-sort="default">標準</li>
+                <li data-sort="new">追加日時が新しい順</li>
+                <li data-sort="old">追加日時が古い順</li>
+              </ul>
+            </div>
+
+
+            <div class="view-toggle">
+              <button class="view-btn grid active" aria-label="グリッド表示"></button>
+              <button class="view-btn list" aria-label="リスト表示"></button>
+            </div>
+
+          </div>
+        </div>
+
+        <div id="cardContainer" class="card-grid"></div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="js/header.js"></script>
+  <script type="module" src="js/pages/favorite.js"></script>
+</body>
+</body>
+
+</html>
