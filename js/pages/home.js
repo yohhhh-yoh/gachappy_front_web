@@ -6,12 +6,12 @@ const container = document.getElementById('today-release');
 
 todayCards.forEach(card => {
   container.insertAdjacentHTML('beforeend', `
-    <div class="card">
+    <div class="card" data-id="${card.id}">
       <div class="placeholder-img" style="background: ${card.bg};"></div>
       <div class="card-content">
         <div class="card-title">
           <div class="card-title-text">${card.title}</div>
-          <div class="heart-icon">♡</div>
+          <div class="heart-icon"></div>
         </div>
         <div class="card-subtitle">${card.maker}</div>
         <div class="card-price">${card.price}</div>
@@ -40,12 +40,12 @@ weeklyData.weeks.forEach(weekData => {
   // 週の中の商品を生成
   weekData.items.forEach(card => {
     grid.insertAdjacentHTML('beforeend', `
-      <div class="card">
+      <div class="card" data-id="${card.id}">
         <div class="placeholder-img" style="background: ${card.bg};"></div>
         <div class="card-content">
           <div class="card-title">
             <div class="card-title-text">${card.title}</div>
-            <div class="heart-icon">♡</div>
+            <div class="heart-icon"></div>
           </div>
           <div class="card-subtitle">${card.maker}</div>
           <div class="card-price">${card.price}</div>
@@ -53,4 +53,18 @@ weeklyData.weeks.forEach(weekData => {
       </div>
     `);
   });
+});
+
+document.addEventListener('click', (e) => {
+  const card = e.target.closest('.card');
+  if (!card) return;
+
+  // お気に入りボタン押下時は遷移させない
+  if (e.target.closest('.heart-icon')) return;
+
+  const id = card.dataset.id;
+  if (!id) return;
+
+  // 詳細ページへ遷移
+  location.href = `/detail.html?id=${id}`;
 });

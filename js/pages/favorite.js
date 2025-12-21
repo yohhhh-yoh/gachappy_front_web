@@ -67,13 +67,13 @@ favoriteItems.forEach(item => {
   cardContainer.insertAdjacentHTML(
     "beforeend",
     `
-    <div class="card">
+    <div class="card" data-id="${item.id}">
       <div class="placeholder-img" style="background: ${item.bg};"></div>
 
       <div class="card-content">
         <div class="card-title">
           <div class="card-title-text">${item.title}</div>
-          <div class="heart-icon">♡</div>
+          <div class="heart-icon"></div>
         </div>
 
         <div class="card-subtitle">${item.maker}</div>
@@ -84,4 +84,16 @@ favoriteItems.forEach(item => {
   );
 });
 
+document.addEventListener('click', (e) => {
+  const card = e.target.closest('.card');
+  if (!card) return;
 
+  // お気に入りボタン押下時は遷移させない
+  if (e.target.closest('.heart-icon')) return;
+
+  const id = card.dataset.id;
+  if (!id) return;
+
+  // 詳細ページへ遷移
+  location.href = `/detail.html?id=${id}`;
+});

@@ -1,12 +1,14 @@
 //テストデータ
 export const todayCards = [
   {
+    id: "KO",
     title: '限定コラボガチャキャラクターデザイン',
     maker: 'Adobe Express',
     price: '¥800',
     bg: 'linear-gradient(135deg, #ffb6c1 0%, #ff69b4 100%)'
   },
   {
+    id: "A",
     title: '朝倉ころミニフィギュアコース',
     maker: 'Firefly',
     price: '¥600',

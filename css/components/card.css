@@ -79,18 +79,29 @@
 }
 
 .heart-icon {
-    background: white;
-    border-radius: 50%;
-    width: 32px;
-    height: 32px;
-    min-width: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-    cursor: pointer;
-    z-index: 10;
-    border: 1px solid #f0f0f0;
+  background-color: white;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  cursor: pointer;
+  z-index: 10;
+  border: 1px solid #f0f0f0;
+
+  /* 追加 */
+  background-image: url("/assets/images/favorite.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px 18px;
+}
+
+/* お気に入りON */
+.heart-icon.active {
+  background-image: url("/assets/images/favorite_on.svg");
 }
 
 .card-list {
@@ -115,7 +126,7 @@
 }
 
 .card-horizontal .card-content {
-    padding: 0;
+    padding: 0px;
     flex: 1;
 }
 
