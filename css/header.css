@@ -50,7 +50,14 @@
 }
 
 .header-nav-item .nav-icon {
-    font-size: 24px;
+    width: 24px;
+    height: 24px;
+    display: block;
+    object-fit: contain;
+}
+
+.header-nav-item img[src*="favorite"] {
+    transform: translateY(1px);
 }
 
 .user-icon {
