@@ -108,3 +108,20 @@ export const favoriteItems = [
     bg: "linear-gradient(135deg, #dcdcff 0%, #6a5acd 100%)"
   }
 ];
+
+export const detailItem = {
+  id: "gacha-002",
+  title: "アニマルフレンズ ミニマスコット",
+  maker: "バンダイ",
+  releaseDate: "2024年11月",
+  price: 400,
+  count: 12,
+  type: "マスコット"
+};
+
+
+export const itemImage = {
+  productId: "gacha-002",
+  background: "linear-gradient(135deg, #171dd1ff 0%, #ff69b4 100%)"
+  // 将来は imageUrl: "/assets/images/xxx.png"
+};

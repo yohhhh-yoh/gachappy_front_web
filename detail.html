@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/components/section.css">
+  <link rel="stylesheet" href="css/detail.css">
 </head>
 
 <body>
@@ -16,12 +18,34 @@
   <div class="main-container">
     <div class="content">
       <div class="section">
-        <div class="section-header">
-          <div class="page-title">商品詳細</div>
+        <!-- <div class="section-header">
+          <div class="page-title">商品タイトル</div>
+        </div> -->
+
+        <div class="product-detail">
+          <div class="product-image-section">
+            <div class="main-image" id="product-image"></div>
+            <div class="image-actions">
+              <button class="action-btn favorite">
+                <span class="icon favorite-icon"></span>
+                お気に入り
+              </button>
+              <button class="action-btn share" id="shareBtn">
+                <span class="icon share-icon"></span>
+                シェア
+              </button>
+            </div>
+
+          </div>
+
+          <div class="product-info-section"></div>
+
         </div>
       </div>
     </div>
   </div>
+
+  <div id="toast" class="toast">リンクをコピーしました</div>
 
   <script src="js/header.js"></script>
   <script src="js/favorite-button.js"></script>
