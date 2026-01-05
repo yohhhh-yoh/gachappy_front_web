@@ -1,25 +1,5 @@
 // mockデータのインポート
-import { todayData, weeklyData } from '../data/mock.js';
-
-// 本日発売商品の表示
-const container = document.getElementById('today-release');
-
-todayData.forEach(card => {
-  container.insertAdjacentHTML('beforeend', `
-    <div class="card" data-id="${card.id}">
-      <div class="placeholder-img" style="background: ${card.bg};"></div>
-      <div class="card-content">
-        <div class="card-title">
-          <div class="card-title-text">${card.title}</div>
-          <div class="heart-icon"></div>
-        </div>
-        <div class="card-subtitle">${card.maker}</div>
-        <div class="card-price">${card.price}</div>
-      </div>
-    </div>
-  `);
-});
-
+import { weeklyData } from '../data/mock.js';
 
 // 発売スケジュールの表示処理
 const weeklyContainer = document.getElementById('weekly-sections');
@@ -29,7 +9,6 @@ weeklyData.weeks.forEach(weekData => {
     <div class="section">
       <div class="section-header">
         <div class="section-title">${weekData.month}月${weekData.week}週より</div>
-        <a href="release-schedule.html" class="view-all">すべてを見る →</a>
       </div>
       <div class="card-grid" id="week-${weekData.week}"></div>
     </div>
