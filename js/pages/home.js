@@ -1,10 +1,10 @@
 // mockデータのインポート
-import { todayCards, weeklyData } from '../data/mock.js';
+import { todayData, weeklyData } from '../data/mock.js';
 
 // 本日発売商品の表示
 const container = document.getElementById('today-release');
 
-todayCards.forEach(card => {
+todayData.forEach(card => {
   container.insertAdjacentHTML('beforeend', `
     <div class="card" data-id="${card.id}">
       <div class="placeholder-img" style="background: ${card.bg};"></div>

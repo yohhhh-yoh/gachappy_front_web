@@ -1,5 +1,5 @@
 //テストデータ
-export const todayCards = [
+export const todayData = [
   {
     id: "gacha-001",
     title: 'ステラ・コラボガチャフィギュア',
