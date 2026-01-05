@@ -20,13 +20,11 @@
   width: 24px;
   height: 24px;
   display: inline-block;
-
   background-image: url("/assets/images/search_30dp.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
-
 
 .search-bar-large input {
   flex: 1;
@@ -52,14 +50,25 @@
   background: #e62929;
 }
 
+.recent-wrapper {
+  position: relative;
+}
 
 .recent-products {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 16px;
+  display: flex;
+  gap: 18px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 0 50px;
+}
+
+
+.recent-products::-webkit-scrollbar {
+  display: none;
 }
 
 .recent-product-item {
+  flex: 0 0 180px;
   cursor: pointer;
   transition: transform 0.2s;
 }
@@ -81,4 +90,36 @@
   line-height: 1.4;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recent-nav {
+  position: absolute;
+  top: 50%;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.recent-nav.left {
+  left: 8px;
+  background-image: url("/assets/images/chevron_right.svg");
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.recent-nav.right {
+  right: 8px;
+  background-image: url("/assets/images/chevron_right.svg");
+}
+
+.recent-nav:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }

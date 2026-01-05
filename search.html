@@ -30,38 +30,18 @@
         <div class="section-header">
           <h2 class="section-title">最近見た商品</h2>
         </div>
-        <div class="recent-products">
-          <div class="recent-product-item">
-            <div class="placeholder-img" style="background: linear-gradient(135deg, #ffb6c1 0%, #ff69b4 100%);">
-              限定コラボ<br>ガチャ</div>
-          </div>
-          <div class="recent-product-item">
-            <div class="placeholder-img" style="background: linear-gradient(135deg, #87ceeb 0%, #4682b4 100%);">
-              朝倉ころ<br>フィギュア</div>
-          </div>
-          <div class="recent-product-item">
-            <div class="placeholder-img" style="background: linear-gradient(135deg, #fff4e6 0%, #ffd700 100%);">和菓<br>くじ
-            </div>
-          </div>
-          <div class="recent-product-item">
-            <div class="placeholder-img" style="background: linear-gradient(135deg, #fff9e6 0%, #ffeb3b 100%);">
-              トースト<br>トリ</div>
-          </div>
-          <div class="recent-product-item">
-            <div class="placeholder-img" style="background: linear-gradient(135deg, #e8f5e9 0%, #66bb6a 100%);">
-              おむすび<br>くじ</div>
-          </div>
-          <div class="recent-product-item">
-            <div class="placeholder-img" style="background: linear-gradient(135deg, #f0f8ff 0%, #64b5f6 100%);">
-              動画字幕<br>ツール</div>
-          </div>
+
+        <div class="recent-wrapper">
+          <button class="recent-nav left" id="recentPrev"></button>
+          <div class="recent-products" id="recentProducts"></div>
+          <button class="recent-nav right" id="recentNext"></button>
         </div>
       </div>
     </div>
 
-    <script src="js/header.js"></script>
-    <script src="js/favorite-button.js"></script>
-    <script type="module" src="js/pages/home.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/favorite-button.js"></script>
+  <script type="module" src="js/pages/search.js"></script>
 </body>
 
 </html>

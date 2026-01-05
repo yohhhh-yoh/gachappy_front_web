@@ -5,6 +5,15 @@ const id = params.get('id');
 
 console.log('商品ID:', id);
 
+// 閲覧履歴
+let recent = JSON.parse(localStorage.getItem('recentItems') || '[]');
+
+recent = recent.filter(itemId => itemId !== id);
+recent.unshift(id);
+recent = recent.slice(0, 10);
+localStorage.setItem('recentItems', JSON.stringify(recent));
+
+
 // ID から商品情報を取得
 const item = allItems.find(i => i.id === id);
 if (!item) {
