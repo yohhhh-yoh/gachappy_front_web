@@ -1,0 +1,155 @@
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #999;
+  margin-bottom: 24px;
+}
+
+.result-count {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.toolbar-actions {
+  margin-right: 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;  
+}
+
+.toolbar-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+    display: inline-flex;
+  align-items: center;
+}
+
+.arrow {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-left: 6px;
+  background-image: url("/assets/images/arrow_drop_down.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.view-toggle {
+  display: flex;
+  gap: 8px;
+}
+
+.view-btn {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25px 25px;
+}
+
+/* グリッド */
+.view-btn.grid {
+  background-image: url("/assets/images/icon-grid.svg");
+}
+
+/* リスト */
+.view-btn.list {
+  background-image: url("/assets/images/icon-list.svg");
+}
+
+.view-btn.active.grid {
+  background-image: url("/assets/images/icon-grid-on.svg");
+}
+
+.view-btn.active.list {
+  background-image: url("/assets/images/icon-list-on.svg");
+}
+
+.sort-wrapper {
+  position: relative;
+}
+
+#sortLabel {
+  display: inline-block;
+  min-width: 150px;
+  text-align: left;
+}
+
+.sort-menu {
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 200px;
+  margin-top: 8px;
+  padding: 8px 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: none;
+  z-index: 10;
+}
+
+.sort-menu li {
+  list-style: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.sort-menu li:hover {
+  background-color: #f5f5f5;
+}
+
+
+/* グリッド表示（デフォルト） */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+@media (min-width: 1024px) {
+  .card-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1400px) {
+  .card-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+/* リスト表示 */
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* リスト表示のときカードを横向きに */
+.card-list .card {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  gap: 16px;
+}
+
+.card-list .placeholder-img {
+  width: 170px;
+  margin: 0;
+}
+
+.card-list .card-content {
+  padding: 0;
+  flex: 1;
+}
