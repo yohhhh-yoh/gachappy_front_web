@@ -18,7 +18,7 @@ gachappy web version front
 - HTML / CSS / JavaScript
 
 ### インフラ
-- Cloudflare Workers
+- Cloudflare Pages
 
 ## 今後の展望
 - 人気ランキングページで選択された期間ごとにランキングを更新する機能の実装
