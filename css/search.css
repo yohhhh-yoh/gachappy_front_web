@@ -123,3 +123,33 @@
 .recent-nav:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
+
+.popular-makers {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 20px 40px;
+  margin-top: 24px;
+  padding: 0 24px;
+}
+
+.maker-item {
+  background: white;
+  border: none;
+  border-radius: 12px;
+  padding: 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.maker-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.maker-item img {
+  width: 100%;
+  height: 64px;
+  object-fit: contain;
+}
+

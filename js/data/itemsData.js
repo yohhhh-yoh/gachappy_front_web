@@ -3,7 +3,7 @@ export const allItems = [
   {
     id: "gacha-001",
     title: 'ステラ・コラボガチャフィギュア',
-    maker: 'Forest Tales',
+    maker: 'ForestTales',
     price: '¥500',
     type: 'フィギュア',
     totalVariants: 6,
@@ -31,7 +31,7 @@ export const allItems = [
   {
     id: "gacha-004",
     title: "森の小動物マスコット",
-    maker: "Forest Tales",
+    maker: "ForestTales",
     price: "¥300",
     type: 'ぬいぐるみ',
     totalVariants: 6,
@@ -69,7 +69,7 @@ export const allItems = [
   {
     id: "gacha-008",
     title: "レトロカフェミニチュア",
-    maker: "Forest Tales",
+    maker: "ForestTales",
     price: "¥500",
     type: 'フィギュア',
     totalVariants: 5,
@@ -124,7 +124,7 @@ export const allItems = [
   {
     id: "gacha-014",
     title: "森の妖精フィギュア",
-    maker: "Forest Tales",
+    maker: "ForestTales",
     price: "¥300",
     type: 'フィギュア',
     totalVariants: 6,
@@ -133,7 +133,7 @@ export const allItems = [
   {
     id: "gacha-015",
     title: "コスモフレンズマスコット",
-    maker: "Forest Tales",
+    maker: "ForestTales",
     price: "¥300",
     type: 'ぬいぐるみ',
     totalVariants: 6,
