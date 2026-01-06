@@ -19,7 +19,7 @@ export const todayData = [
     title: "ルナ・スターフィギュア",
     maker: "FrostyWorks",
     price: "¥300",
-    bg: "linear-gradient(135deg, #ffb6c1 0%, #ff69b4 100%)"
+    bg: "linear-gradient(135deg, #b7e7f8ff 0%, #e2e222ff 100%)"
   },
   {
     id: "gacha-004",
@@ -143,7 +143,7 @@ export const rankingData = [
     title: "ルナ・スターフィギュア",
     maker: "FrostyWorks",
     price: "¥300",
-    bg: "linear-gradient(135deg, #ffb6c1 0%, #ff69b4 100%)"
+    bg: "linear-gradient(135deg, #b7e7f8ff 0%, #e2e222ff 100%)"
   },
   {
     id: "gacha-004",

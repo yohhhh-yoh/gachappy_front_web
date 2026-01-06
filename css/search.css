@@ -59,7 +59,8 @@
   gap: 18px;
   overflow-x: auto;
   scroll-behavior: smooth;
-  padding: 0 50px;
+  padding: 0 40px;
+  padding-bottom: 10px;
 }
 
 
